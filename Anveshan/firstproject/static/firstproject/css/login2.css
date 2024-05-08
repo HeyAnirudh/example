@@ -1,0 +1,202 @@
+/* login pop up overlay */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.css-1i0q9up {
+    z-index:4;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.css-ntwulx {
+    z-index:5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden auto;
+    background: rgba(0, 0, 0, 0.9);
+}
+.css-1ctw19d {
+    position: relative;
+    margin: 50px auto 0;
+    max-width: 584px;
+    width: 100%;
+}
+.css-hxh2qk {
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 0;
+}
+.css-1d3eei2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    color: rgb(0, 0, 0);
+}
+.css-1d3eei2 svg {
+    width: 18px;
+}
+.css-1mj77r5 {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(241, 241, 241);
+    border-radius: 4px 4px 0 0;
+    padding: 14px 20px;
+    min-height: 50px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+.css-moekf5-styles--wrapper-Title--Title {
+    color: rgb(16, 16, 16);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    display: none;
+}
+.css-1bw05bs {
+    padding: 24px 20px 34px;
+    min-height: calc(100vh - 100px);
+    background-color: rgb(255, 255, 255);
+    border-radius: 0;
+}
+.css-1kcc0yp {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 24px;
+}
+.css-13ebjox {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+}
+.css-vyfvbi {
+    appearance: none;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Helvetica Neue", Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, Dotum, 돋움, "Apple SD Gothic Neo", sans-serif;
+    color: rgb(16, 16, 16);
+    line-height: 20px;
+    border: 2px solid rgb(191, 191, 191);
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    transition: color 0.3s ease 0s, border-color 0.3s ease 0s, background-color 0.3s ease 0s;
+}
+.css-1hivhnf {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 11px 14px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    line-height: 22px;
+    border-radius: 4px;
+    border: 2px solid rgb(255, 102, 97);
+    background-color: rgb(255, 102, 97);
+    transition: color 0.3s ease 0s, border-color 0.3s ease 0s, background-color 0.3s ease 0s, box-shadow 0.3s ease 0s;
+    margin-top: 24px;
+}
+.css-2o4187 {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Helvetica Neue", Helvetica, system-ui, -apple-system, BlinkMacSystemFont, Arial, Dotum, 돋움, "Apple SD Gothic Neo", sans-serif;
+    cursor: pointer;
+    color: rgb(16, 16, 16);
+    line-height: 24px;
+}
+.css-1jdh5yi::before {
+    content: attr(data-alt);
+    color: rgb(255, 88, 90);
+}
+.css-1jdh5yi > span {
+    display: none;
+}
+.css-1hivhnf[data-flexible="true"] {
+    display: block;
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    .css-1ctw19d {
+        margin: 10% auto;
+    }
+    .css-1d3eei2 {
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        width: 24px;
+        height: 24px;
+        background-color: rgb(71, 71, 71);
+        border-radius: 50%;
+        color: rgb(255, 255, 255);
+    }
+    .css-1d3eei2 svg {
+        width: 18px;
+        height: 18px;
+    }
+    .css-1mj77r5 {
+        position: static;
+        padding: 56px 0 24px;
+        height: auto;
+        border-bottom: 0;
+        border-radius: 8px 8px 0 0;
+    }
+    .css-moekf5-styles--wrapper-Title--Title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .css-moekf5-styles--wrapper-Title--Title {
+        display: initial;
+    }
+    .css-1bw05bs {
+        padding: 24px 48px 48px;
+        min-height: auto;
+        border-radius: 0 0 8px 8px;
+    }
+    .css-1kcc0yp {
+        margin-bottom: 32px;
+    }
+    .css-vyfvbi {
+        padding: 16px 14px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .css-1hivhnf {
+        padding: 15px 22px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .css-1hivhnf {
+        margin-top: 40px;
+    }
+}
+@media only screen and (min-width: 1248px) {
+    .css-moekf5-styles--wrapper-Title--Title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}

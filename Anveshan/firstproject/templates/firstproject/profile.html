@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="static/firstproject/css/profile.css">
+</head>
+<script src="{% static 'script.js' %}"></script>
+<body>
+    <div class="navbar ">
+        <div class="icon">
+            <img src="static/firstproject/css/logo.png" alt="ANVESHAN Logo" class="logo">
+            <h2 class="logo-text">ANVESHAN</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">UPDATES</a></li>
+                <li><a href="#">LEADERBOARD</a></li>
+                <li><a href="#">MEDIAHUB</a></li>
+                <li><a href="#">TEAMS</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="index.html">LOGOUT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="profile-top">
+        <h1 class="title">My Profile</h1>
+        <p class="subtitle">You can Change your profile picture<br>
+            or Tell Something about yourself or<br>
+            convert your anveshan points to clap points.</p>
+    </div>
+    <div class="profile-container">
+        <div class="profile-left">
+            <div class="header__wrapper">
+                <header></header>
+                <div class="cols__container">
+                  <div class="left__col">
+                    <div class="img__container">
+                      <img src="static/firstproject/css/profilepic.jpg" alt="Virat KOhli" />
+                      <span></span>
+                    </div>
+                    <div class="profile__header">
+                        <div class="profile__account">
+                            <h2 class="profile__username">Dhanush H</h2>
+                            <h4 class="profile__uid"><span style="font-weight: 400;">@uig</span>25458</h4>
+                        </div>
+                        <div class="profile__edit">
+                            <button class="profile__button edit-button" href="#">Edit
+                                Profile</button>
+                        </div>
+                        <div class="profile__edit">
+                            <button class="profile__button redeem_points" href="#">Redeem Points</button>
+                        </div>
+                    </div>
+                    <div class="profile__stats">
+                        <div class="profile__anv">
+                            <div class="profile__value">0<div class="profile__key">
+                                    ANVESHAN Points</div>
+                            </div>
+                        </div>
+                        <div class="profile__red">
+                            <div class="profile__value">0<div class="profile__key">Redeemable Points</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div> 
+        </div>      
+        </div>
+        
+                <div class="profile">
+                    <div class="profile__data__header">
+                        <div class="profile__data">
+                            <h3 class="profile__data--Description Description__header">About</h3>
+                            <h3 class="profile__data--Description"><span style="font-weight: 400;">Portal Developer</span></h3>
+                        </div>
+                        <div class="profile__data">
+                            <h3 class="profile__data--Description Description__header">Mailing Address</h3>
+                            <h3 class="profile__data--Description"><span style="font-weight: 400;">dhanush.h@continental-corporation.com</span></h3>
+                        </div>
+                        <div class="profile__data">
+                            <h3 class="profile__data--Description Description__header">Team</h3>
+                            <h3 class="profile__data--Description"><span style="font-weight: 400;">Phenoix</span></h3>
+                        </div>
+                    </div>
+                </div>
+</body>
+<script>
+     const profilePictureInput = document.getElementById('profile-picture');
+        const profilePreview = document.getElementById('profile-preview');
+
+        profilePictureInput.addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function() {
+                    profilePreview.src = reader.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+</script>
+</html>

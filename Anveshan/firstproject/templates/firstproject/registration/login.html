@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<title>Login</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----------- load CSS ------------->
+    <link rel="stylesheet" type="text/css" href="static/firstproject/css/base.css">
+    <link rel="stylesheet" type="text/css" href="static/firstproject/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="static/firstproject/css/footer.css">
+    
+<link rel="stylesheet" type="text/css" href="static/firstproject/css/login2.css">
+<link rel="stylesheet" type="text/css" href="static/firstproject/css/newsfeed.css">
+<style>
+    body {
+        overflow: hidden;
+    }
+</style>
+
+<link rel="stylesheet" href="static/firstproject/css/metro-all.min.css">
+<link rel="stylesheet" type="text/css" href="static/firstproject/css/bootstrap.min.css">
+<link rel="shortcut icon" type="image/png" href="static/firstproject/css/favicon.ico">
+<link rel="stylesheet" href="static/firstproject/css/fontawesome-free-5.15.3-web/css/all.css">
+</head>
+
+<body>
+    <!---- Navigation Bar ---->
+    <nav class="nav">
+        <div class="container-navbar">
+            <div class="logo">
+                <img src="static/firstproject/css/bias4_nobg.png" alt="Bias4_logo">
+                <a href="/newsfeed/1/">ANVESHAN</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="/newsfeed/news_all/1/">Updates</a></li>
+                    <li><a href="/events/1/">Events</a></li>
+                    <li><a href="/boards/1/">Leaderboard</a></li>
+                    <li><a href="/biasmediahub/1/">Media Hub</a></li>
+                    <li><a href="/teams/1/">Teams</a></li>
+                    <li><a href="/about/1/">About</a></li>
+                    
+                    <li><a href="templates/registration/login.html">Login</a></li>
+                    
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    
+<main class="layout-contents-container home">
+    <section class="Styled-banner-section">
+        <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted">
+            <source src="static/firstproject/css/free-your-ideas.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="banner">
+            <div class="css-loo9wb">
+                <div class="banner-content-box">
+                    <h1 class="banner-content-heading">Free your ideas</h1>
+                    <p class="banner-content-paragraph">Don’t let a good idea stay just an idea. ANVESHAN is the most
+                        intuitive way to prototype and perfect them.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<div class="modal-root">
+    <div class="css-1i0q9up"></div>
+    <div class="css-ntwulx">
+        <section role="dialog" class="css-1ctw19d">
+            <div>
+                <header class="css-1mj77r5">
+                    <h3 class="css-moekf5-styles--wrapper-Title--Title">Log in</h3>
+                </header>
+                <div class="css-1bw05bs">
+                    <form method="post" id="login-form">
+                        {% csrf_token %}
+                        <div class="css-1kcc0yp">
+                            <div class="css-13ebjox">
+                                <label for="id_username" class="css-2o4187">Username</label>
+                                <span data-alt="*" class="css-1jdh5yi"><span>(required)</span></span>
+                            </div>
+                            <input type="text" name="username" autofocus autocapitalize="none" autocomplete="username" maxlength="20" required id="id_username">
+                        </div>
+                        <div class="css-1kcc0yp">
+                            
+                            <div class="css-13ebjox">
+                                <label for="id_password" class="css-2o4187">Password</label>
+                                <span data-alt="*" class="css-1jdh5yi"><span>(required)</span></span>
+                            </div>
+                            <input type="password" name="password" autocomplete="current-password" required id="id_password">
+                        </div>
+                        <button class="css-1hivhnf" data-flexible="true" data-loading="false"
+                            type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text" onclick="location.href='mailto:AU_OZ_SM_ANVESHAN@continental.com'"
+                                style="cursor: pointer;">
+                                <h4>Reach us</h4>
+                                <span>Innovation Council, AN</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-plane-arrival"></i>
+                            <div class="cta-text">
+                                <h4>Visits</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="#"><img src="static/firstproject/css/Continental_logo.png" class="img-fluid"
+                                        alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>AN Innovation Council presents ANVESHAN to accelerate innovation through gamification
+                                    approach to the entire Business Area Architecture and Networking, Bengaluru.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us on </span>
+                                <a
+                                    href="http://connext.conti.de/communities/service/html/communityoverview?communityUuid=554d3c79-6271-44aa-a11d-03a7524ccfc6"><i
+                                        class="fab fa-bandcamp fa-2x"></i></a>
+                                <a href="https://web.microsoftstream.com/channel/3ee08aff-d55f-4d4c-9833-f3733eecb6b6"><i
+                                        class="fas fa-play fa-2x" style="color: #8c004a"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="/newsfeed/1/">Home</a></li>
+                                <li><a href="/about/1/">about</a></li>
+                                <li><a href="/events/1/">Events</a></li>
+                                <li><a href="/boards/1/">Leaderboard</a></li>
+                                <li><a href="/biasmediahub/1/">Media Hub</a></li>
+                                <li><a href="/newsfeed/news_all/1/">Updates Center</a></li>
+                                <li><a href="login2.html">Login</a>
+                                <li><a
+                                        href="https://confluence.auto.continental.cloud/pages/viewpage.action?spaceKey=VNIINDIA&title=ANVESHAN">Confluence
+                                        page</a>
+                                </li>
+                                <li><a href="/contactus/1/">Support</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Feedbacks</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Get in touch with us or please provide your valuable feedbacks and thoughts</p>
+                            </div>
+                            
+                            <div class="footer-text mb-25">
+                                <p>Login First to Submit</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-lg-left">
+                        <div class="copyright-text">
+                            <p>Designed By Innovation Council - v2.0</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="/newsfeed/1/">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="/contactus/1/">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!---------- Load SCRIPTS ------------>
+    <script type="text/javascript" src="static/firstproject/js/jquery.min.js"></script>
+    <script type="text/javascript" src="static/firstproject/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/firstproject/js/base.js"></script>
+    <script type="text/javascript" src="static/firstproject/js/MetroJs.js"></script>
+    <script src="static/firstproject/js/metro.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    </body>
